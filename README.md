@@ -1,1 +1,1 @@
-This repository contains the Google Colab notebook used to conduct the initial DeepLabCut feasibility check for the project. The pilot successfully trained a ResNet-50 network to track invariant stomatopod cuticular keypoints with a test RMSE of 3.44 pixels.
+This repository contains the Google Colab notebook used to conduct the initial DeepLabCut feasibility check for the project. The pilot successfully trained a ResNet-50 network to track 8 invariant keypoints with a test RMSE of 3.44 pixels.
