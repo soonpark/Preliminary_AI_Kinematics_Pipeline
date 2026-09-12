@@ -1,0 +1,93 @@
+# Config schema version. Do not edit manually.
+config_version: 0
+# Project definitions (do not edit)
+Task: testStomatopodEyeTracking
+scorer: SYP
+date: Aug19
+multianimalproject: false
+identity:
+
+# Project path (change when moving around)
+project_path: /content/drive/MyDrive/FolderName
+pose_config_path:
+
+# Default DeepLabCut engine to use for shuffle creation (either pytorch or tensorflow)
+engine: pytorch
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  stomatopod:
+    crop: 0, 640, 0, 360
+bodyparts:
+- L_midband_dorsal
+- L_midband_ventral
+- L_eyestalk_peduncle
+- L_stalk_base
+- R_midband_dorsal
+- R_midband_ventral
+- R_eyestalk_peduncle
+- R_stalk_base
+individuals:
+- individual_1
+uniquebodyparts: []
+multianimalbodyparts: []
+
+# Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0.0
+stop: 1.0
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- - L_eyestalk_peduncle
+  - L_midband_dorsal
+- - L_midband_dorsal
+  - L_midband_ventral
+- - L_midband_ventral
+  - L_stalk_base
+- - R_eyestalk_peduncle
+  - R_midband_dorsal
+- - R_midband_dorsal
+  - R_midband_ventral
+- - R_midband_ventral
+  - R_stalk_base
+- - L_stalk_base
+  - R_stalk_base
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 3
+alphavalue: 0.7
+colormap: rainbow
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+default_track_method:
+snapshotindex: -1
+detector_snapshotindex: -1
+batch_size: 8
+detector_batch_size: 1
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+# if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
+
+# Conversion tables to fine-tune SuperAnimal weights
+SuperAnimalConversionTables:
+
+# These are very old parameters that are no longer used They are simply ignored.
+resnet:
+croppedtraining:
