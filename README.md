@@ -20,3 +20,6 @@ The ResNet-50 model was evaluated using a 95% training split (19 training frames
 * **Mean Average Recall (mAR):** 100.00%
 
 These sub-4 pixel error rates on the test split indicate that the model successfully learned to track the annotated points within this proof-of-concept dataset.
+
+## Generalization Note
+The final labeled output video is the same source video from which the 20 training frames were extracted. This demonstrates successful "in-domain" tracking for this specific setup. Scaling this model to track subjects robustly across different camera angles, lighting conditions, or new environments would require a larger, more diverse training dataset.
