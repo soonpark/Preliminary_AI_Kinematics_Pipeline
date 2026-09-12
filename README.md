@@ -2,8 +2,7 @@ This repository contains the Google Colab notebook (.ipynb file) used to conduct
  
 [Watch the labeled output video here](https://drive.google.com/file/d/1IOg2pYKO64VzHwlO9WMj5372WY-q5ZIN/view?usp=sharing)
 ## Data and Annotation
-* **8 invariant keypoints:**
-* L_midband_dorsal, R_midband_dorsal; L_midband_ventral, R_midband_ventral; L_eyestalk_peduncle, R_eyestalk_peduncle; L_stalk_base, R_stalk_base  
+* **8 invariant keypoints:** L_midband_dorsal, R_midband_dorsal; L_midband_ventral, R_midband_ventral; L_eyestalk_peduncle, R_eyestalk_peduncle; L_stalk_base, R_stalk_base  
 * **Tool used:** [CVAT](https://www.cvat.ai/) 
 * **Dataset size:** 20 manually annotated frames. This small dataset was used to demonstrate the end-to-end DeepLabCut workflow.
 
