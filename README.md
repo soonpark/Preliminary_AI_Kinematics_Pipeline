@@ -10,3 +10,13 @@ This repository contains the Google Colab notebook (.ipynb file) used to conduct
 * **Environment:** Google Colab 
 * **Training duration:** 200 epochs 
 * **Goal:** Proof of concept to verify the pipeline from data annotation to model evaluation.
+
+## Model Evaluation
+The ResNet-50 model was evaluated using a 95% training split (19 training frames, 1 test frame). Using a 0.6 confidence cutoff, the network achieved the following accuracy metrics:
+
+* **Training Error:** 2.57 pixels
+* **Test Error:** 3.72 pixels 
+* **Mean Average Precision (mAP):** 100.00%
+* **Mean Average Recall (mAR):** 100.00%
+
+These sub-4 pixel error rates on the test split indicate that the model successfully learned to track the annotated points within this proof-of-concept dataset.
