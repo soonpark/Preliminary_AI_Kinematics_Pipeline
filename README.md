@@ -1,4 +1,6 @@
 This repository contains the Google Colab notebook (.ipynb file) used to conduct the initial DeepLabCut feasibility check for the project. The pilot successfully trained a ResNet-50 network to track 8 invariant keypoints with a test RMSE of 3.44 pixels.
+
+![DLC Tracking Demo](assets/stomatopodDLC_Resnet50_testStomatopodEyeTrackingDemo.gif)
  
 [Watch the labeled output video here](https://drive.google.com/file/d/1IOg2pYKO64VzHwlO9WMj5372WY-q5ZIN/view?usp=sharing)
 ## Data and Annotation
