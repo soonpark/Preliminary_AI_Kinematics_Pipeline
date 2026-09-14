@@ -1,8 +1,9 @@
 This repository contains the Google Colab notebook (.ipynb file) used to conduct the initial DeepLabCut feasibility check for the project using 20 training frames. The pilot successfully trained a ResNet-50 network to track 8 invariant keypoints with a test RMSE of 3.44 pixels.
 
 ![DLC Tracking Demo](assets/stomatopodDLC_Resnet50_testStomatopodEyeTrackingDemo.gif)
- 
+
 [Watch the labeled output full video here](https://drive.google.com/file/d/1IOg2pYKO64VzHwlO9WMj5372WY-q5ZIN/view?usp=sharing)
+
 ## Data and Annotation
 * **8 invariant keypoints:** L_midband_dorsal, R_midband_dorsal; L_midband_ventral, R_midband_ventral; L_eyestalk_peduncle, R_eyestalk_peduncle; L_stalk_base, R_stalk_base  
 * **Tool used:** [CVAT](https://www.cvat.ai/) 
@@ -25,3 +26,11 @@ These sub-4 pixel error rates on the test split indicate that the model successf
 
 ## Generalization Note
 The final labeled output video is the same source video from which the 20 training frames were extracted. This demonstrates successful "in-domain" tracking for this specific setup. Scaling this model to track subjects robustly across different camera angles, lighting conditions, or new environments would require a larger, more diverse training dataset.
+
+## Data Source & Provenance
+The raw video used for frame extraction and model inference was sourced from YouTube:
+- **Title:** Odontodactylus scyllarus eye movements
+- **Channel/Creator:** Michael Bok
+- **URL:** https://www.youtube.com/watch?v=IpnprJ8rvuk
+- **License:** Standard YouTube License
+- **Usage Authorization:** Video used with explicit permission from the copyright holder (Dr. Michael Bok).
